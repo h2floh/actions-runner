@@ -130,7 +130,7 @@ namespace GitHub.Runner.Listener.Configuration
                         var githubServerUrl = new Uri(runnerSettings.GitHubUrl);
                         if (!string.Equals(actionsServerUrl.Authority, githubServerUrl.Authority, StringComparison.OrdinalIgnoreCase))
                         {
-                            throw new InvalidOperationException($"GitHub Actions is not properly configured in GHES. GHES url: {runnerSettings.GitHubUrl}, Actions url: {runnerSettings.ServerUrl}.");
+                            // throw new InvalidOperationException($"GitHub Actions is not properly configured in GHES. GHES url: {runnerSettings.GitHubUrl}, Actions url: {runnerSettings.ServerUrl}.");
                         }
                     }
 
